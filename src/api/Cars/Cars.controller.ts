@@ -17,7 +17,7 @@ export const getModelli = async (
     //     res.status(200).json(response);
     //     return;
     // }
-    const response = await Option.find().populate("CategoriaOptionalIDmongo").populate("ModelloIDmongo");
+    const response = await Modelli.find();
     //cache.set("getModelli", response, process.env.TTL_NYT || 3600);
     res.status(200).json(response);
 }
